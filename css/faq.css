@@ -8,10 +8,10 @@ body {
     .table > tbody > tr > td {
     vertical-align: middle;
     }
-    #text, .card{
+    .text, .card{
     text-align: center;
     }
-    #fb {
+    .fb {
     vertical-align: bottom;
     }
     #twitter-widget-0, #twitter-widget-1, #twitter-widget-2, #twitter-widget-3, #twitter-widget-4, #twitter-widget-5, #twitter-widget-6, #twitter-widget-7, #twitter-widget-8 {

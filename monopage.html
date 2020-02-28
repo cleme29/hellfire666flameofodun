@@ -1,79 +1,227 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com
-'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
-width=device-width">
-    <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- CSS personnel -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>Charles Bouffant & Valentin Mons</title>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">APPLICATION</a>
-        <!-- Bouton lorsque l'on réduit la taille de l'écran-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Force India</title>
+      <link rel="icon" type="image/png" href="images/logoFI.png">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!-- sinon le menu est sur le texte -->
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/impression.css" media="print">
+      <link href="css/carousel.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/faq.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(0, 0, 0);">
+         <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+         <!--Bouton lorsque lon réduit la taille de lécran-->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="nav nav-pills" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="page1-tab" href="#page1" data-toggle="tab" role="tab" aria-controls="page1" aria-selected="true">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="page2-tab" href="#page2" data-toggle="tab" role="tab" aria-controls="page2" aria-selected="false">Batterie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="page3-tab" href="#page3" data-toggle="tab" role="tab" aria-controls="page3" aria-selected="false">Météo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="page4-tab" href="#page4" data-toggle="tab" role="tab" aria-controls="page4" aria-selected="false">Géolocalisation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="page5-tab" href="#page5" data-toggle="tab" role="tab" aria-controls="page5" aria-selected="false">Carte</a>
-                </li>
+               <li class="nav-item">
+                  <a class="nav-link active" id="page1-tab" href="#page1" data-toggle="tab" role="tab" aria-controls="page1" aria-selected="true">Accueil <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="page2-tab" href="#page2" data-toggle="tab" role="tab" aria-controls="page2" aria-selected="false">Membres</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="page3-tab" href="#page3" data-toggle="tab" role="tab" aria-controls="page3" aria-selected="false">FAQ</a>
+               </li>
             </ul>
-        </div>
-    </nav>
-    <main class="container">
-    	<div class="tab-content">
-    		<div id="page1" class="tab-pane active" role="tabpanel" aria-labelledby="page1-tab">
-    			dsqd
-    		</div>
-    		<div id="page2" class="tab-pane" role="tabpanel" aria-labelledby="page2-tab">
-    			test
-    		</div>
-    		<div id="page3" class="tab-pane" role="tabpanel" aria-labelledby="page3-tab">
-    			bb
-    		</div>
-    		<div id="page4" class="tab-pane" role="tabpanel" aria-labelledby="page4-tab">
-    			<!-- INSERER ICI LA PAGE GEOLOCALISATION -->
-    		</div>
-    		<div id="page5" class="tab-pane" role="tabpanel" aria-labelledby="page5-tab">
-    			<!-- INSERER ICI LA PAGE CARTE -->
-    		</div>
-      </div>
-    </main>
-    <!-- /.container -->
-
-    
-    <!-- JavaScript Bootstrap pour utiliser quelques fonctionnalités dynamiques -->
-    <!-- A placer à la fin du document juste avant </body> afin que les pages se chargent plus vite -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <!-- nécessaire pour certains plugins -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <!-- Ce fichier n'est pas présent
-physiquement, il sera crée lors de la compilation sur chaque cible choisie -->
-    <script type="text/javascript" src="js/index.js"></script>
-    <!-- notre code JS -->
-</body>
-
+         </div>
+      </nav>
+      <main class="container">
+         <div class="tab-content">
+            <div id="page1" class="tab-pane active" role="tabpanel" aria-labelledby="page1-tab">
+               <!-- PAGE INDEX -->
+               dsqd
+            </div>
+            <div id="page2" class="tab-pane" role="tabpanel" aria-labelledby="page2-tab">
+               <!-- PAGE MEMBRES -->
+            </div>
+            <div id="page3" class="tab-pane" role="tabpanel" aria-labelledby="page3-tab">
+               <div class="container">
+                  <h2>Foire aux questions :</h2>
+                  <div class="accordion" id="accordionExample">
+                     <div class="card">
+                        <div class="card-header" id="headingOne">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                 aria-expanded="false" aria-controls="collapseOne">
+                              Pourquoi le choix du rose sur vos voitures ?
+                              </button>
+                           </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                           <div class="card-body">
+                              Notre sponsor principal : BWT a décidé de la livrée de nos voitures depuis 2017. Leurs donnant ainsi cette couleur rose reconnaissable à des kilomètres.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" id="headingTwo">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                 aria-expanded="false" aria-controls="collapseTwo">
+                              Quel est le budget de l'écurie ?
+                              </button>
+                           </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                           <div class="card-body">
+                              Notre budget est d'environ 110 millions €, à titre de comparaison, Ferrari possède un budget d'environ 430 millions € et Mercedes 450 millions €.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-header" id="headingThree">
+                           <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                 aria-expanded="false" aria-controls="collapseThree">
+                              Force India courra-t-elle pour la saison 2019 ?
+                              </button>
+                           </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                           <div class="card-body">
+                              Force India s'est fait racheter durant la saison 2018 et continuera sous le nom de Racing Point.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <div class="media">
+                        <div class="media-body">
+                           <h2 class="media-heading">Où nous rendre visite ?</h2>
+                           <p>Notre QG est situé en Angleterre à coté du circuit de Silverstone.</p>
+                        </div>
+                        <div class="media-right">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6118.288628888112!2d-1.0375938!3d52.0767716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48771c4326a99a09%3A0xa198b56c6ad35bff!2sSahara+Force+India+F1+Team!5e1!3m2!1sfr!2sfr!4v1547340606798" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="container">
+                     <h2>Nos adversaires :</h2>
+                     <p>Voici la liste des écuries concurrentes avec leur site web et leur réseaux sociaux</p>
+                     <table class="table">
+                        <tbody>
+                           <tr>
+                              <td>
+                                 <img src="images/mercedes.jpg" alt="mercedes" width="100" height="100">
+                              </td>
+                              <td class="text">Mercedes-AMG</td>
+                              <td class="text">
+                                 <a href="https://www.mercedesamgf1.com/en/mercedes-amg-f1/" target="_blank">Site de Mercedes-AMG
+                                 &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/MercedesAMGF1/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/mercedesamgf1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @mercedesamgf1</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/ferrari.png" alt="ferrari" width="100" height="100"></td>
+                              <td class="text">Scuderia Ferrari</td>
+                              <td class="text">
+                                 <a href="https://formula1.ferrari.com/en/" target="_blank">Site de la Scuderia Ferrari &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/ScuderiaFerrari&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/scuderiaferrari?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @scuderiaferrari</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/redbull.jpg" alt="redbull" width="100" height="100"></td>
+                              <td class="text">Red Bull Racing</td>
+                              <td class="text">
+                                 <a href="https://redbullracing.redbull.com/" target="_blank">Site de RedBull Racing &nbsp;</a>
+                                 <iframe id="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/redbullracing&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/redbullracing?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @redbullracing</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/renault.jpeg" alt="renault" width="100" height="100"></td>
+                              <td class="text">Renault Sport</td>
+                              <td class="text">
+                                 <a href="https://www.renaultsport.com/?lang=fr" target="_blank">Site de Renault Sport &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/RenaultSportFR/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/RenaultSportF1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @RenaultSportF1</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/sauber.png" alt="sauber" width="100" height="100"></td>
+                              <td class="text">Sauber F1 Team</td>
+                              <td class="text">
+                                 <a href="https://www.sauberf1team.com/" target="_blank">Site de Alfa Romeo Sauber &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/sauberf1team/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/SauberF1Team?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @SauberF1Team</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/haas.jpg" alt="haas" width="100" height="100">
+                              </td>
+                              <td class="text">Haas F1 Team</td>
+                              <td class="text">
+                                 <a href="https://www.haasf1team.com/" target="_blank">Site de Haas &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/haasf1team/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/HaasF1Team?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @HaasF1Team</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/mclaren.png" alt="mclaren" width="100" height="100"></td>
+                              <td class="text">McLaren Racing</td>
+                              <td class="text">
+                                 <a href="https://www.mclaren.com/formula1/" target="_blank">Site de McLaren &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/McLaren.Racing/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/McLarenF1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @McLarenF1</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/tororosso.jpg" alt="toro rosso" width="100" height="100"></td>
+                              <td class="text">Scuderia Toro Rosso</td>
+                              <td class="text">
+                                 <a href="https://scuderiatororosso.redbull.com/en_INT" target="_blank">Site de la Scuderia Toro Rosso
+                                 &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/tororosso/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/ToroRosso?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ToroRosso</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td><img src="images/williams.jpeg" alt="williams" width="100" height="100"></td>
+                              <td class="text">Williams Martini Racing</td>
+                              <td class="text">
+                                 <a href="https://www.williamsf1.com/" target="_blank">Site de Williams Martini Racing &nbsp;</a>
+                                 <iframe class="fb" src="https://www.facebook.com/plugins/like.html?href=https://www.facebook.com/WilliamsF1Team/&amp;show_faces=false&amp;layout=button_count" scrolling="no" frameborder="0" style="height: 21px; width: 100px" allowtransparency="true"></iframe>
+                                 <a href="https://twitter.com/WilliamsRacing?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @WilliamsRacing</a>
+                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="container">
+         <p class="float-right"><a href="index.html">Haut de la page</a></p>
+         <p class="float-right"><a href="https://validator.w3.org/#validate_by_input" target="_blank">Lien Validateur &nbsp;</a></p>
+         <p id="pied">&copy; 2019 Sahara Force India, Inc.</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
 </html>
