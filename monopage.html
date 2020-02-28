@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com
+'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+width=device-width">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS personnel -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Charles Bouffant & Valentin Mons</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">APPLICATION</a>
+        <!-- Bouton lorsque l'on réduit la taille de l'écran-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="page1-tab" href="#page1" data-toggle="tab" role="tab" aria-controls="page1" aria-selected="true">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="page2-tab" href="#page2" data-toggle="tab" role="tab" aria-controls="page2" aria-selected="false">Batterie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="page3-tab" href="#page3" data-toggle="tab" role="tab" aria-controls="page3" aria-selected="false">Météo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="page4-tab" href="#page4" data-toggle="tab" role="tab" aria-controls="page4" aria-selected="false">Géolocalisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="page5-tab" href="#page5" data-toggle="tab" role="tab" aria-controls="page5" aria-selected="false">Carte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+    	<div class="tab-content">
+    		<div id="page1" class="tab-pane active" role="tabpanel" aria-labelledby="page1-tab">
+    			dsqd
+    		</div>
+    		<div id="page2" class="tab-pane" role="tabpanel" aria-labelledby="page2-tab">
+    			test
+    		</div>
+    		<div id="page3" class="tab-pane" role="tabpanel" aria-labelledby="page3-tab">
+    			bb
+    		</div>
+    		<div id="page4" class="tab-pane" role="tabpanel" aria-labelledby="page4-tab">
+    			<!-- INSERER ICI LA PAGE GEOLOCALISATION -->
+    		</div>
+    		<div id="page5" class="tab-pane" role="tabpanel" aria-labelledby="page5-tab">
+    			<!-- INSERER ICI LA PAGE CARTE -->
+    		</div>
+      </div>
+    </main>
+    <!-- /.container -->
+
+    
+    <!-- JavaScript Bootstrap pour utiliser quelques fonctionnalités dynamiques -->
+    <!-- A placer à la fin du document juste avant </body> afin que les pages se chargent plus vite -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- nécessaire pour certains plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- Ce fichier n'est pas présent
+physiquement, il sera crée lors de la compilation sur chaque cible choisie -->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- notre code JS -->
+</body>
+
+</html>
