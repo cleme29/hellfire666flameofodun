@@ -1,13 +1,57 @@
+ .carousel-inner video {
+     margin: auto;
+}
+ #slide1 {
+     position: absolute;
+     top: -5px 
+}
+ #vid {
+     text-align: center;
+}
+ @media (max-width: 768px) {
+     article {
+         float: none;
+         margin-left:50px;
+    }
+}
+ body {
+     padding-top: 5rem;
+}
+ .starter-template {
+     padding: 3rem 1.5rem;
+     text-align: center;
+}
+ .table > tbody > tr > td {
+     vertical-align: middle;
+}
+ .text, .card{
+     text-align: center;
+}
+ .fb {
+     vertical-align: bottom;
+}
+ #twitter-widget-0, #twitter-widget-1, #twitter-widget-2, #twitter-widget-3, #twitter-widget-4, #twitter-widget-5, #twitter-widget-6, #twitter-widget-7, #twitter-widget-8 {
+     display: inline-block;
+     vertical-align: middle;
+}
+ iframe{
+     position: relative;
+     top: -2px;
+}
+ .container{
+     margin-top: 25px;
+     margin-bottom: 25px;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
+#bodyCarousel {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -36,6 +80,11 @@ body {
 }
 
 
+
+
+
+
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -53,6 +102,9 @@ body {
 }
 
 
+
+
+
 /* Featurettes
 ------------------------- */
 
@@ -66,6 +118,7 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
+
 
 
 /* RESPONSIVE CSS

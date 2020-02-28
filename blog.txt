@@ -1,0 +1,15 @@
+4. Corriger, Modifier le projet afin de bien exploiter le menu « responsive » et la grille
+Bootstrap, le container, les div, ... comme rappelé en TD (et revoir le projet WEB1).
+6. Selon votre projet rendre les tableaux responsive ou les remplacer en faisant votre
+propre tableau avec la grille Bootstrap (un tableau <=> lignes qui contiennent des
+colonnes). - JSP
+7. Certaines lignes doivent s'afficher sur deux colonnes à partir de sm (>768 px) pour
+une consultation sur tablette par exemple - !!!!!!!!!!!
+8. Valider à la fois le code HTML et le code CSS
+
+
+
+à faire:
+  - fix carousel
+  - responsive niveau très petit à revoir (carousel)
+  - valider le code (capture écran des validations à faire)
