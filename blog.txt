@@ -10,6 +10,6 @@ une consultation sur tablette par exemple - !!!!!!!!!!!
 
 
 à faire:
-  - fix carousel
+  - fix carousel (quoi?)
   - responsive niveau très petit à revoir (carousel)
   - valider le code (capture écran des validations à faire)

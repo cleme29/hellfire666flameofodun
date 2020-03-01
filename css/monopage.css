@@ -142,3 +142,24 @@
     margin-top: 7rem;
   }
 }
+
+
+/* TENTATIVE FAQ */
+
+@media (max-width: 768px) {
+  .media{
+    display: block;
+  }
+  
+  iframe{
+    max-width: 450px;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  iframe{
+    max-width: 300px;
+  }
+  
+}
